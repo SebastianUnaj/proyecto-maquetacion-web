@@ -1,0 +1,97 @@
+/* h1{
+    font-family: "Inconsolata", serif;
+}
+h2{
+    font-family: "Roboto Mono", serif;
+} */
+
+/* NORMALIZACION: */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*mantiene ancho y alto*/
+    font-family: 'Inconsolata', serif;
+    list-style: none; /*quita los puntos y decoracion de las listas*/
+    text-decoration: none; /*quita el subrrayado de los comentarios*/
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    position: fixed; /*queda fijo arriba*/
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: transparent;
+
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.navlist{
+    display: flex; /*elementos en linea*/
+
+}
+
+.navlist a{
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white; /*subrayado blando*/
+
+}
+
+#menu-icon{
+    display: none;/*para que se vea cuando la pagina esta colapsada*/
+}
+
+
+#menu-icon{
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;/*aparece la manito*/
+}
+
+#menu-toggle{
+    display: none;/*nunca quiero que se vea el checkbox*/
+
+}
+
+.menu-icon-action{
+    display: none;/*para que no se le pueda hacer click*/
+
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #314943 0%, #385e70 25%, #131313 75%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+section{
+    padding: 0 8%;
+}
