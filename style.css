@@ -124,6 +124,7 @@ section{
     margin: 10% 0 0 10%;
     height: auto;
     transition: all 5s linear;
+    border: 10px solid rgb(20, 112, 88);
     border-radius: 500px;
 
 }
